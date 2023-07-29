@@ -14,26 +14,24 @@ body {
     color: var(--slate, #434455);
 }
 
-header {
-    height: 72px;
-    flex-shrink: 0;
-    border-bottom: 1px solid var(--cornflower, #E7E9FC);
-    background: var(--white, #FFF);
-}
-
 a {
     text-decoration: none;
-    color: var(--navyblue, #2E2F42);
+    color: var(--slate, #434455);
     font-style: normal;
-}
-
-nav {
-    display: inline-block;
-    margin: 0px 0px 0px 156px;
 }
 
 button {
     cursor: pointer;
+}
+
+.header {
+    height: 72px;
+    border-bottom: 1px solid var(--cornflower, #E7E9FC);
+}
+
+.header-row {
+    margin: 0;
+    padding: 25.5px 156px 25.5px 156px;
 }
 
 .logo {
@@ -43,9 +41,10 @@ button {
     line-height: 1.167;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    margin-right: 40px;
 }
 
-.head-logo-1 {
+.logo-span {
     color: var(--iris, #4D5AE5);
 }
 
@@ -57,38 +56,34 @@ ul {
     list-style: none;
     display: inline-block;
     padding-left: 0px;
-    font-size: 16px;
-    line-height: 1.5;
     letter-spacing: 0.32px;
     margin: 0;
 }
 
-.menu {
+.nav-list {
     display: inline;
     padding-right: 40px;
+    font-weight: 500;
+    color: var(--navyblue, #2E2F42);
 }
 
-address {
-    display: inline;
-    font-size: 16px;
-    line-height: 1.5;
+.address {
     letter-spacing: 0.32px;
-    margin-right: 156px;
-    float: right;
+    float:right;
 }
 
 #email {
     padding-right: 40px;
 }
 
-.section-1 {   
+.banner-section {   
     background-color: var(--navyblue, #2E2F42);
     height: 600px;
     text-align: center;
     flex-shrink: 0;
 }
 
-h1 {
+.catch-phrase {
     font-size: 56px;
     font-weight: 700;
     line-height: 0.933;
@@ -120,17 +115,16 @@ h1 {
     color: var(--iris, #4D5AE5);
 }
 
-.section-2 {
+.about-section {
     text-align: center;
 }
 
-.list-sec-2 {
+.about-list {
     display: inline-block;
 }
 
 h3 {
     color: var(--navyblue, #2E2F42);
-    /* Header 3 */
     font-size: 20px;
     font-weight: 500;
     line-height: 0.83;
@@ -140,23 +134,19 @@ h3 {
 }
 
 .txt-sec-2 {
-    /* Body */
     font-size: 16px;
     line-height: 1.5;
-    /* 150% */
     letter-spacing: 0.32px;
     width: 264px;
     text-align: left;
     margin-right: 24px;
 }
 
-h2 {
+.section-heading { /* Header 2 */
     color: var(--navyblue, #2E2F42);
-    /* Header 2 */
     font-size: 36px;
     font-weight: 700;
     line-height: 0.9;
-    /* 111.111% */
     letter-spacing: 0.72px;
     text-transform: capitalize;
     margin: 0px 0px 72px 0px;
@@ -168,7 +158,7 @@ h2 {
     display: inline;
 }
 
-.section-3 {
+.team-section {
     background-color: var(--cloud, #F4F4FD);
     height: 732px;
     text-align: center;
@@ -176,7 +166,7 @@ h2 {
     margin: 120px 0px 0px 0px;
 }
 
-.profile {
+.profile-list {
     display: inline-block;
     padding: 0;
     flex-direction: column;
@@ -195,41 +185,35 @@ h2 {
 
 .role {
     text-align: center;
-    /* Body */
     font-size: 16px;
     line-height: 1.5;
-    /* 150% */
     letter-spacing: 0.32px;
     margin: 8px 0px 32px 0px;
 }
 
-footer {
+.footer {
     background-color: var(--navyblue, #2E2F42);
     height: 312px;
-    width: 100%;
-    display: inline-block;
 }
 
-.foot-logo-1 {
-    color: var(--iris, #4D5AE5);
-    margin-left: 156px;
+.footer-row {
+    padding: 101.5px 0px 0px 156px;
 }
 
-.foot-logo-2 {
+.logo-span-2{
     color: var(--white, #FFF);
 }
 
 .footer-text {
     color: var(--cloud, #F4F4FD);
-    /* Body */
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    margin-left: 156px;
+    margin: 17.5px 0px 0px 0px;
     width: 264px;
 }
 
-.por-section {
+.portfolio-section {
     text-align: center;
 }
 
@@ -265,7 +249,7 @@ footer {
     color: var(--cloud, #F4F4FD);
 }
 
-.work-list {
+.project-list {
     display: inline-block;
     width: 360px;
     height: 420px;
@@ -278,14 +262,13 @@ footer {
     margin: 0px 24px 48px 0px;
 }
 
-.work-list-head {
+.project-list-title {
     margin: 32px 0px 8px 16px;
 }
 
-.work-type {
+.project-type {
     margin: 0px 0px 0px 16px;
     text-align: left;
-    /* Body */
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
