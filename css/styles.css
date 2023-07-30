@@ -27,13 +27,12 @@ body {
 }
 
 .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 72px;
     border-bottom: 1px solid var(--cornflower, #E7E9FC);
-}
-
-.header-row {
-    margin: 0;
-    padding: 25.5px 156px 25.5px 156px;
+    padding: 0px 156px;
 }
 
 .logo {
@@ -64,9 +63,12 @@ body {
 
 .nav-list {
     display: inline;
-    padding-right: 40px;
     font-weight: 500;
     color: var(--navyblue, #2E2F42);
+}
+
+.nav-list:not(:last-child) {
+    padding-right: 40px;
 }
 
 .address {
@@ -156,8 +158,11 @@ body {
 }
 
 .we-do-list {
-    padding-right: 24px;
     display: inline;
+}
+
+.we-do-list:not(:last-child) {
+    padding-right: 24px;
 }
 
 .team-section {
@@ -177,6 +182,9 @@ body {
     border-radius: 0px 0px 4px 4px;
     background: var(--white, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.profile-list:not(:last-child) {
     margin-right: 24px;
 }
 
@@ -194,12 +202,12 @@ body {
 }
 
 .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--navyblue, #2E2F42);
     height: 312px;
-}
-
-.footer-row {
-    padding: 101.5px 0px 0px 156px;
+    padding: 0px 156px;
 }
 
 .logo-span-2{
@@ -225,7 +233,11 @@ body {
 
 .filter-list {
     display: inline-block;
-    margin: 96px 0px 0px 24px;
+    margin-top: 96px;
+}
+
+.filter-list:not(:first-child) {
+    margin-left: 24px;
 }
 
 .portfolio-section button {
